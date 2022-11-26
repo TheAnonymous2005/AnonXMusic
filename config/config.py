@@ -7,21 +7,21 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "15443180" ))
+API_HASH = getenv("API_HASH", "7cd4725247752f02ad24e8c89a70b3a0" )
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5734531558:AAFjsCOzETeC3rx9HrYOgTE2b6oQNMcSXzA" )
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority" )
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID" "-1001739380859" ))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝙍𝙖𝙣𝙞 ✘ 𝙈𝙪𝙨𝙞𝙘 [❤️]")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5564090687").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheAnonymous2005/AnonXMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VENOM95823358158/AnonXMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/56d1760224589ee370186.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/6d4e8e492ae6895826524.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/6c1fb04031bf2238e1f56.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
